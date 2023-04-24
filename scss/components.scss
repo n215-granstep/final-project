@@ -1,0 +1,86 @@
+.tour-component{
+    width: $tour-banner-width;
+    height: $tour-banner-height;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .info{
+        width: 80%;
+        height: 100%;
+        color: $site-white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-transform: uppercase;
+        text-align: center;
+
+        h1{
+            font-family: Proxima-ECI;
+            font-weight: normal;
+            margin-bottom: 5px;
+            margin-top: 40px;
+            font-size: 55px;
+            white-space: nowrap;
+        }
+
+        p{
+            font-family: Proxima-ECI;
+            font-weight: normal;
+            font-size: 28px;
+        }
+
+        h6{
+            margin-bottom: 60px;
+        }
+
+        a{
+            font-family: GS-Reg;
+            font-weight: normal;
+            font-size: 15px;
+            text-decoration: none;
+            color: $site-white;
+            padding: 11px 21px;
+            background-color: $site-blue;
+            border-radius: 20px;
+        }
+    }
+}
+
+.israel{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/tour/tour-01.jpg);
+}
+.usa{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/tour/tour-02.jpg);
+}
+.austrailia{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/tour/tour-03.jpg);
+}
+.newzealand{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/tour/tour-04.jpg);
+}
+.france{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/tour/tour-05.jpg);
+}
+.egypt{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/tour/tour-06.jpg);
+}
+.japan{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/tour/tour-07.jpg);
+}
+.canada{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/tour/tour-08.jpg);
+}
+.uae{
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/tour/tour-09.jpg);
+}
+
+@media (max-width: 860px){
+    .tour-component{
+        margin-bottom: 30px;
+    }
+}

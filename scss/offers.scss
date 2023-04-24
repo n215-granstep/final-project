@@ -1,0 +1,83 @@
+.offers{
+    width: $nav-width;
+    margin: 0 auto;
+    padding-bottom: 40px;
+
+    .head{
+        font-family: Proxima-ECI;
+        color: $site-black;
+        font-weight: normal;
+        font-size: 30px;
+        border-bottom: solid $site-black 2px;
+        width: 160px;
+        padding-top: 150px;
+        margin-bottom: 36px;
+    }
+
+    .post{
+        height: 287px;
+        display: flex;
+        margin-bottom: 60px;
+
+        img{
+            width: 200px;
+            height: 100%;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+        .info{
+            height: 100%;
+            position: relative;
+
+            .title{
+                display: flex;
+
+                h1{
+                    font-family: Proxima-ECI;
+                    color: $site-black;
+                    font-weight: normal;
+                    font-size: 30px;
+                    border-bottom: solid $site-black 2px;
+                    margin-bottom: 21px;
+                }
+                .first{
+                    width: 155px;
+                }
+                .second{
+                    width: 170px;
+                }
+                h3{
+                    font-family: Proxima-ECI;
+                    color: #FF7D38;
+                    font-weight: normal;
+                    font-size: 20px;
+                    padding-top: 9px;
+                }
+            }
+            p{
+                font-family: GS-Light;
+                font-size: 16px;
+                color: $site-black;
+                width: 240px;
+            }
+            a{
+                font-family: GS-Reg;
+                text-decoration: none;
+                font-size: 15px;
+                text-transform: uppercase;
+                color: $site-white;
+                padding: 11px 21px;
+                background-color: $site-blue;
+                border-radius: 30px;
+                position: absolute;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .offers{
+        padding-left: 20px;
+    }
+}

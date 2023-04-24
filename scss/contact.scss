@@ -1,0 +1,99 @@
+.contact{
+    width: $nav-width;
+    margin: 0 auto;
+    padding-top: 150px;
+    margin-bottom: 100px;
+
+    h1{
+        font-family: Proxima-ECI;
+        color: $site-black;
+        font-weight: normal;
+        font-size: 30px;
+        border-bottom: solid $site-black 2px;
+        width: 120px;
+        margin-bottom: 50px;
+    }
+
+    .split{
+        display: flex;
+        justify-content: space-between;
+
+        .location{
+            width: 400px;
+            iframe{
+                margin-bottom: 30px;
+                width: 100%;
+            }
+            p{
+                margin-bottom: 0;
+                font-family: GS-Light;
+                color: $site-black;
+                font-weight: normal;
+                font-size: 18px;
+            }
+        }
+
+        .feild{
+            width: 529px;
+
+            input{
+                height: 60px;
+                width: 100%;
+                margin-bottom: 21px;
+                padding-left: 20px;
+                color: $site-black;
+                background-color: #F5F5F5;
+                border: none;
+                font-family: GS-Reg;
+                font-size: 16px;
+            }
+            textarea{
+                width: 100%;
+                height: 200px;
+                margin-bottom: 40px;
+                padding: 20px;
+                color: $site-black;
+                background-color: #F5F5F5;
+                border: none;
+                font-family: GS-Reg;
+                font-size: 16px;
+                resize: none;
+            }
+            a{
+                font-family: GS-Reg;
+                font-weight: normal;
+                font-size: 16px;
+                color: $site-white;
+                padding: 20px;
+                background-color: $site-blue;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px){
+    .contact{
+        padding-left: 20px;
+        .split{
+            justify-content: unset;
+            .feild{
+                margin-left: 20px;
+                width: 420px;
+            }
+        }
+    }
+}
+@media (max-width: 900px){
+    .contact{
+        .split{
+            .location{
+                width: 350px;
+            }
+            .feild{
+                width: 350px;
+            }
+        }
+    }
+}

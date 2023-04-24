@@ -1,0 +1,51 @@
+.tours{
+    padding-top: 142px;
+    padding-bottom: 50px;
+    max-width: $nav-width;
+    margin: 0 auto;
+
+    .hero-banner{
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/tour/tours-header.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        margin-bottom: 50px;
+
+        h1{
+            font-family: Proxima-ECI;
+            font-weight: normal;
+            font-size: 60px;
+            color: $site-white;
+        }
+    }
+
+    .local-line{
+        max-width: 818px;
+        min-height: $tour-banner-height;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto 50px auto;
+    }
+}
+
+@media (max-width: 1000px){
+    .tours{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 860px){
+    .tours{
+        .local-line{
+            flex-direction: column;
+            align-items: center;
+            margin: 0 auto;
+        }
+    }
+}

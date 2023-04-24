@@ -1,0 +1,298 @@
+.home{
+    .hero{
+        max-width: 100%;
+        height: $hero-height;
+        background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/hero.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .title{
+            margin: 80px auto 0 auto;
+            text-align: center;
+            color: $site-white;
+            
+            h1{
+                margin-bottom: 25px;
+                font-family: Proxima-ECI;
+                font-weight: normal;
+                font-size: 60px;
+            }
+            p{
+                margin-bottom: 2px;
+                font-family: GS-Italic;
+                font-size: 20px;
+            }
+            h6{
+                margin-top: 60px;
+                font-weight: normal;
+            }
+            a{
+                margin-top: 60px;
+                font-family: GS-Reg;
+                text-decoration: none;
+                font-size: 15px;
+                color: $site-white;
+                padding: 11px 20px;
+                background-color: $site-blue;
+            }
+        }
+    }
+
+    .promo{
+        max-width: 818px;
+        min-height: $tour-banner-height;
+        display: flex;
+        justify-content: space-between;
+        margin: -43px auto 0 auto;
+    }
+
+    .form-area{
+        max-width: 818px;
+        min-height: $tour-banner-height;
+        margin: 0 auto;
+        margin: 50px auto 0 auto;
+
+        h1{
+            font-family: Proxima-ECI;
+            font-weight: normal;
+            font-size: 60px;
+            margin-bottom: 28px;
+        }
+
+        .form{
+            margin-bottom: 100px;
+            input{
+                height: 58px;
+                padding: 20px;
+                border: solid $site-blue 2px;
+                font-family: GS-Light;
+                font-size: 18px;
+                color: $site-black;
+            }
+            ::placeholder{
+                color: $site-black;
+                opacity: 1;
+            }
+            .two-inputs{
+                min-height: 58px;
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .left{
+                    width: 344px;
+                }
+                .right{
+                    width: 453px;
+                }
+            }
+
+            .single-input{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: relative;
+                margin-bottom: 20px;
+
+                .large{
+                    width: 698px;
+                }
+
+                .icon{
+                    font-size: 25px;
+                    position: absolute;
+                    right: 30px;
+                }
+
+                .leftLabel{
+                    text-align: left;
+                }
+            }
+            label{
+                font-family: GS-Light;
+                font-weight: normal;
+                font-size: 18px;
+                color: $site-black;
+            }
+
+            .triple-line{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+
+                .dd-pair{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 222px;
+                    height: 58px;
+                    position: relative;
+
+                    select{
+                        width: 103px;
+                        height: 58px;
+                        border: solid $site-blue 2px;
+                        padding-left: 19px;
+                        font-family: GS-Light;
+                        font-weight: normal;
+                        font-size: 18px;
+                        appearance: none;
+                        -webkit-appearance: none;
+                        -moz-appearance: none;
+                        color: $site-black;
+                        background-color: $site-white;
+                    }
+
+                    i{
+                        font-size: 25px;
+                        position: absolute;
+                        right: 11px;
+                    }
+                }
+            }
+
+            textarea{
+                width: 100%;
+                height: 192px;
+                padding: 20px;
+                border: solid $site-blue 2px;
+                font-family: GS-Light;
+                font-size: 18px;
+                color: $site-black;
+                resize: none;
+                margin-bottom: 57px;
+            }
+
+            .formSubmission{
+                width: 100%;
+                min-height: 61px;
+
+                a{
+                    font-family: GS-Reg;
+                    font-weight: normal;
+                    font-size: 15px;
+                    color: $site-white;
+                    padding: 21px 47%;
+                    background-color: $site-blue;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    border-radius: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 900px){
+    .form-area{
+        padding: 0px 20px;
+        .form{
+            .two-inputs{
+                .left{
+                    width: 40%;
+                    margin-right: 20px;
+                }
+                .right{
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 860px){
+    .home{
+        .promo{
+            flex-direction: column;
+            align-items: center;
+        }
+        .form-area{
+            .form{
+                margin-bottom: 60px;
+                .single-input{
+                    flex-direction: column;
+                    .large{
+                        width: 100%;
+                    }
+                    i{
+                        top: 38px
+                    }
+                    .leftLabel{
+                        width: 100%;
+                    }
+                }
+                .triple-line{
+                    .dd-pair{
+                        margin-left: 10px;
+                    }
+                }
+                .formSubmission{
+                    a{
+                        padding: 21px 46%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 640px){
+    .home{
+        .form-area{
+            .form{
+                .two-inputs{
+                    flex-direction: column;
+                    .left{
+                        width: 100%;
+                        margin-bottom: 20px;
+                    }
+                    .right{
+                        width: 100%;
+                    }
+                }
+                .triple-line{
+                    .dd-pair{
+                        width: 30%;
+                        select{
+                            width: 50%;
+                        }
+                    }
+                }
+                .formSubmission{
+                    a{
+                        padding: 21px 45%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+    .home{
+        .form-area{
+            .form{
+                .triple-line{
+                    flex-direction: column;
+                    .dd-pair{
+                        width: 100%;
+                        margin-bottom: 12px;
+                        select{
+                            width: 70%;
+                        }
+                    }
+                }
+                .formSubmission{
+                    a{
+                        padding: 21px 42.5%;
+                    }
+                }
+            }
+        }
+    }
+}
